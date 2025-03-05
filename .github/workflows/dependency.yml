@@ -25,11 +25,11 @@ jobs:
        run: ls
      - run: env
 
-dependent-job-2:
-  needs: dependent-job-1
-  runs-on: ubuntu-latest
-  name: final job 
+  dependent-job-2:
+    needs: dependent-job-1
+    runs-on: ubuntu-latest
+    name: final job 
 
-  steps:
-    - run: echo wow this is cool!
+    steps:
+      - run: echo wow this is cool!
     
