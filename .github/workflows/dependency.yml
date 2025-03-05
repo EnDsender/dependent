@@ -10,7 +10,7 @@ jobs:
      - run: pwd
 
   job-on-windows:
-    runs-on: windows latest
+    runs-on: windows-latest
     steps:
        - name: First step in windows job 
          run: date
